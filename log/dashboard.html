@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeTag | Dashboard</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <h1>SafeTag</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="greeting">
+            <h2>Hi, Rohit 👋</h2>
+        </div>
+        <div class="category-toggle">
+            <button class="toggle-btn">All</button>
+            <button class="toggle-btn">Male</button>
+            <button class="toggle-btn">Fem.</button>
+        </div>
+        <div class="sections">
+            <div class="section financial-freedom">
+                <h3>Financial Freedom</h3>
+                <img src="financial-icon.png" alt="Financial Freedom Icon">
+            </div>
+            <div class="section productivity">
+                <h3>Productivity</h3>
+                <img src="productivity-icon.png" alt="Productivity Icon">
+            </div>
+            <div class="section feeling-well">
+                <h3>Feeling well</h3>
+                <img src="feeling-well-icon.png" alt="Feeling Well Icon">
+            </div>
+            <div class="section personal-life">
+                <h3>Personal life</h3>
+                <img src="personal-life-icon.png" alt="Personal Life Icon">
+            </div>
+        </div>
+        <div class="task">
+            <h4>Productivity</h4>
+            <div class="task-name">The Gift</div>
+            <button class="start-btn">START</button>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="feed">
+            <div class="post">
+                <div class="post-header">
+                    <img src="user-avatar.png" alt="User Avatar" class="avatar">
+                    <h3>Username</h3>
+                </div>
+                <img src="post-image.jpg" alt="Post Image" class="post-image">
+                <div class="post-actions">
+                    <button class="like-btn">Like</button>
+                    <button class="comment-btn">Comment</button>
+                    <button class="share-btn">Share</button>
+                </div>
+                <div class="post-comments">
+                    <p><strong>Username:</strong> Great post!</p>
+                    <p><strong>AnotherUser:</strong> Awesome!</p>
+                </div>
+            </div>
+            <!-- Repeat the .post div for more posts -->
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <ul class="nav-links">
+            <li><a href="#home"><img src="home-icon.png" alt="Home"></a></li>
+            <li><a href="#search"><img src="search-icon.png" alt="Search"></a></li>
+            <li><a href="#reels"><img src="reels-icon.png" alt="Reels"></a></li>
+            <li><a href="#likes"><img src="likes-icon.png" alt="Likes"></a></li>
+            <li><a href="#profile"><img src="profile-icon.png" alt="Profile"><span class="notification-dot"></span></a></li>
+        </ul>
+    </nav>
+</body>
+</html>

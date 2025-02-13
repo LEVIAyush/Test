@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFETAG | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <h1>Welcome to Safetag!</h1>
+        <p>Your one-stop solution for tracking Buddys efficiently.</p>
+    </header>
+    <div class="container">
+        <div class="login-container">
+            <h2>Sign In</h2>
+            <p class="login-subtext">Use your Safetag account</p>
+            <form id="login-form" class="form-container">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" aria-label="Username"><br><br>
+                <label for="password">Password:</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" placeholder="Enter your password" aria-label="Password">
+                    <span class="toggle-password" onclick="togglePassword('password')" aria-label="Show/Hide Password">&#128065;</span>
+                </div>
+                <input type="checkbox" id="checkbox" name="checkbox" title="">
+                <label for="checkbox">Save login info!</label><br><br>
+                <button type="submit" id="login-btn">Login</button>
+                <div class="social-login">
+                    <p>Or sign in with</p>
+                    <button class="social-btn google">
+                        <img src="g.png" alt="Google">
+                    </button>
+                    <button class="social-btn facebook">
+                        <img src="f.png" alt="Facebook">
+                    </button>
+                </div>
+            </form>
+            <p id="create-account">Don't have an account?
+                <span id="create-account-link">Sign up</span>
+            </p>
+        </div>
+        <div class="signup-container hidden">
+            <h2>Create an Account</h2>
+            <p class="login-subtext">Join SafeTag today</p>
+            <form id="create-account-form" class="form-container">
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" name="new-username" placeholder="Choose a username" aria-label="New Username"><br><br>
+                <label for="new-password">Password:</label>
+                <div class="password-container">
+                    <input type="password" id="new-password" name="new-password" placeholder="Create a password" aria-label="New Password">
+                    <span class="toggle-password" onclick="togglePassword('new-password')" aria-label="Show/Hide New Password">&#128065;</span>
+                </div><br>
+                <label for="confirm-password">Confirm Password:</label>
+                <div class="password-container">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" aria-label="Confirm Password">
+                    <span class="toggle-password" onclick="togglePassword('confirm-password')" aria-label="Show/Hide Confirm Password">&#128065;</span>
+                </div><br>
+                <p id="back-to-home">
+                    <span id="back-to-home-link">Back to Home</span>
+                </p>
+                <button type="submit" id="create-account-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

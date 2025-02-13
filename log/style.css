@@ -1,0 +1,262 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url(2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow-x: visible;
+    color: rgb(218, 33, 33);
+    padding: 0px; /* Prevents content from touching edges */
+}
+
+/* Stylish Heading */
+.header {
+    text-align: center;
+    margin-top: -30px;
+    font-family: 'Dancing Script', cursive; /* Cursive Font */
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration-color: rgb(87, 11, 11);
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.74);
+}
+/* Subheading */
+.header p {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(147, 37, 37);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container for Login and Signup */
+.container {
+    width: 90%;
+    max-width: 400px; /* Prevents stretching too wide */
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0px 4px 10px rgba(25, 178, 88, 0.2);
+}
+
+/* Login and Signup Box */
+h2 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(241, 37, 37);
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+/* Social Login Buttons */
+.social-login {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.social-btn {
+    width: 0px;
+    height: 0px;
+    border: none;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 5px;
+}
+
+.google {
+    background-color: transparent;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.social-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-btn:hover {
+    background-color: transparent;
+    opacity: 0.8;
+    transform: scale(1.05); /* Makes the button pop up slightly */
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+a {
+    font-size: small;
+}
+
+p {
+    font-size: 15px;
+    text-align: center;
+}
+
+label {
+    margin-left: 5px;
+    font-size: 13px;
+    text-align: left;
+}
+
+/* Input Fields */
+input[type="text"], input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(13, 2, 2);
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="checkbox"] {
+    position: static;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+input::placeholder {
+    color: rgba(76, 13, 13, 0.6);
+}
+
+input:hover {
+    box-shadow: 0px 0px 30px rgba(99, 48, 126, 0.5);
+    color: rgba(0, 0, 0, 0.6);
+    transform: scale(1.05); /* Makes the button pop up slightly */
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Password Container */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-password {
+    position: relative;
+    right: 30px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+/* Buttons */
+button {
+    width: 40%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e24d4d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: center;
+    margin-left: 100px;
+    transition: all 0.3s ease;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+
+/* Hover Effect on Buttons */
+button:hover {
+    background-color: #ff5f5f;
+    box-shadow: 0px 0px 30px rgba(217, 117, 9, 0.5);
+    transform: scale(1.1); /* Makes the button pop up slightly */
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Create Account Link */
+#create-account {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#create-account-link {
+    color: #ffa41b;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#back-to-home-link {
+    color: #ffa41b;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#create-account-link:hover {
+    color: #e68900;
+}
+
+/* Hide Signup Initially */
+.hidden {
+    display: none;
+}
+
+/* Focus States */
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: 2px solid #ffa41b;
+    box-shadow: 0px 0px 5px rgba(255, 164, 27, 0.8);
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 320px;
+        padding: 15px;
+    }
+
+    .header {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
